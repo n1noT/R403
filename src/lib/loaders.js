@@ -1,7 +1,9 @@
+
+
 export async function fetchAgeData(ageName){
     let answer = await fetch('/src/lib/data/age-data.json');
     let data = await answer.json();
-    return data[ageName];
+    return data;
 }
 
 export async function fetchTestimonialData(teamName){

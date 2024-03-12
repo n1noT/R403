@@ -1,15 +1,18 @@
 {
-  "36" :{
-    "image": "requin-3.svg",
-    "title": "3-6 ans"
-  }, 
-  "69" :{
-    "image": "requin-6.svg",
-    "title": "6-9 ans"
-  }, 
-  "912" :{
-    "image": "requin-9.svg",
-    "title": "9-12 ans"
-  } 
+  "ages": [
+    {
+      "image": "requin-3.svg",
+      "title": "3-6 ans"
+    }, 
+    {
+      "image": "requin-6.svg",
+      "title": "6-9 ans"
+    }, 
+    {
+      "image": "requin-9.svg",
+      "title": "9-12 ans"
+    } 
+  ]
+    
   
 }

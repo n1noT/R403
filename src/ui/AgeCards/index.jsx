@@ -1,11 +1,12 @@
 import Card from "./Card.jsx";
 
 
-export default function Accueil(age) {
-  let age = age.map((age) => {
+export default function AgeCards(age) {
+  console.log(age)
+  let ageCards = age.ages.map((age) => {
     // console.log(index);
     return (
-      <li key={age.id}>
+      <li key={age.id} class="accueil__list-item">
         <Card
           image={age.image}
           title={age.title}
@@ -15,7 +16,7 @@ export default function Accueil(age) {
   });
   return (
     <ul class="accueil__list">
-      {age}
+      {ageCards}
     </ul>
   );
 }

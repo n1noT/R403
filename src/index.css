@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import './css/accueil.css';
+
 
 
 :root{
@@ -52,6 +54,7 @@ body {
   line-height: 1.5;
   background-color: var(--bg);
   color: var(--text-base);
+  margin: 0;;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -97,7 +100,7 @@ textarea:not([rows]) {
 
 .title{
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 4rem;
     font-size: var(--fs-title);
     font-family: var(--ff-title);
 }

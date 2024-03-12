@@ -7,6 +7,7 @@ export default function Root() {
     <>
       <section>
         <Title/>
+        <Outlet/>
         
       </section>
     </>

@@ -4,8 +4,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Root from './routes/root.jsx';
 import About from './routes/about.jsx';
-// import Store, {loader as StoreLoader} from './routes/store.jsx';
-// import OurTeams, {loader as OurTeamsLoader} from './routes/ourteams.jsx';
+import Accueil, {loader as AgeLoader} from './routes/age.jsx';
 import ErrorPage from './ui/ErrorPage'
 
 import { Suspense } from 'react';
@@ -21,20 +20,19 @@ const router = createBrowserRouter([
     path: '/',
     element: <Root />,
     errorElement:<ErrorPage />,
-    // children: [
-    //     {
-    //       path: '/accueil',
-    //       element: <Accueil />,
-    //       loader: StoreLoader,
-    //     },
-    //     {
-    //       path: '/team/:teamName',
-    //       element: <Suspense fallback={<Loading />}>
-    //       <OurTeams />
-    //     </Suspense>,
-    //       loader: OurTeamsLoader,
-    //     }
-    // ]
+    children: [
+         {
+          path: '/',
+          element: <Accueil />,
+          loader: AgeLoader,
+         },
+        //  {
+        //   path: '/menu',
+        //   element: <Menu />,
+        //   loader: MenuLoader,
+        //  },
+
+    ]
   },
   {
     path: '/about',
