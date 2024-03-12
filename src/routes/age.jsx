@@ -24,7 +24,7 @@ export default function Accueil() {
       <h2 className="accueil__subtitle">Bienvenue sur ton application préférée
             pour prendre soin de tes dents !</h2>
       <Suspense >
-            <Await resolve={data.age} errorElement={<div>Failed to load team data</div>}>
+            <Await resolve={data.age} errorElement={<div>Failed to load age data</div>}>
                 {ageData =>  <AgeCards {...ageData}></AgeCards>}
             </Await>
            

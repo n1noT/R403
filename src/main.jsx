@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
 import Root from './routes/root.jsx';
-import About from './routes/about.jsx';
+
 import Accueil, {loader as AgeLoader} from './routes/age.jsx';
 import ErrorPage from './ui/ErrorPage'
 
@@ -33,11 +33,7 @@ const router = createBrowserRouter([
         //  },
 
     ]
-  },
-  {
-    path: '/about',
-    element: <About />
-  },
+  }
   
 ]);
 
