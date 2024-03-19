@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import './css/accueil.css';
+@import './css/menu.css';
 
 
 
 :root{
     --blue: hsl(206, 90%, 39%);
     --light-blue: hsl(210, 76%, 69%);
+    --light-blue-transparent: hsl(210, 76%, 69%, 50%);
     --green: hsl(130, 92%, 79%);
     --red: hsl(0, 82%, 79%);
     --white: hsl(0, 0%, 100%);
@@ -15,11 +17,18 @@
     --bg: var(--blue);
     --bg-second: var(--transparent-white);
     --text-base : var(--white);
+    --text-secondary : var(--black);
+
+    --card-bg: var(--light-blue);
+    --card-secondary-bg: var(--light-blue-transparent);
+
+    --button-bg: var(--white);
 
     --fs-title: 2rem;
     --fs-subtitle: 1rem;
     
     --ff-title: 'Fredoka', sans-serif;
+    --ff-p: 'Lato', sans-serif;
 }
 
 /* Box sizing rules */
@@ -110,4 +119,8 @@ textarea:not([rows]) {
     top: 8px;
     right: 8px;
     width: 80px;
+}
+
+span{
+  font-weight: 700;
 }

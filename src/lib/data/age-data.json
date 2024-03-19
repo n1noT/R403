@@ -2,17 +2,23 @@
   "ages": [
     {
       "image": "requin-3.svg",
+      "link": "menu/36",
       "title": "3-6 ans"
     }, 
     {
       "image": "requin-6.svg",
+      "link": "menu/69",
       "title": "6-9 ans"
     }, 
     {
       "image": "requin-9.svg",
+      "link": "menu/912",
       "title": "9-12 ans"
     } 
   ]
-    
   
 }
+    
+
+    
+  

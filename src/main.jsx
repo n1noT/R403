@@ -5,15 +5,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Root from './routes/root.jsx';
 
 import Accueil, {loader as AgeLoader} from './routes/age.jsx';
+import Menu, {loader as MenuLoader} from './routes/menu.jsx';
 import ErrorPage from './ui/ErrorPage'
 
-import { Suspense } from 'react';
 
 import './index.css';
 
-function Loading() {
-  return <h2>🌀 Chargement...</h2>;
-}
+
 
 const router = createBrowserRouter([
   {
@@ -26,11 +24,11 @@ const router = createBrowserRouter([
           element: <Accueil />,
           loader: AgeLoader,
          },
-        //  {
-        //   path: '/menu',
-        //   element: <Menu />,
-        //   loader: MenuLoader,
-        //  },
+        {
+          path: '/menu/:ageName',
+          element: <Menu />,
+          loader: MenuLoader,
+        },
 
     ]
   }

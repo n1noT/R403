@@ -8,7 +8,7 @@ export default function AgeCards(age) {
     // console.log(index);
     return (
       <li key={age.id} className="accueil__list-item">
-        <Link to={age.title} className="accueil__list-link">
+        <Link to={age.link} className="accueil__list-link">
        
               <Card
               image={age.image}
