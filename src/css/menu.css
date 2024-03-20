@@ -62,9 +62,9 @@ position: relative;
     gap: 3rem;
     cursor:pointer;
     list-style: none;
-    border: 2px solid white;
-    border-style: dotted;
-    border-radius: 15px;
+    border: 3px solid white;
+    border-style: dashed;
+    border-radius: 10px;
     
     
 }
@@ -74,6 +74,7 @@ position: relative;
     background-color: var(--button-bg);
     border-radius: 20px;
     list-style: none;
+    box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.3);
 }
 
 .menu__list-link {
