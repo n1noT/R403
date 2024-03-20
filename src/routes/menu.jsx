@@ -20,7 +20,12 @@ export default function Menu() {
 
   return (
     <>
+    <Link to="../" >
+      <img src='../arrow.svg' className='arrow'></img>
+    </Link>
     <div className='menu__title'>
+      
+    
       <div className="menu__title-box ">
         <img src={data.image} alt="" className="menu__title-img"></img>
       </div>

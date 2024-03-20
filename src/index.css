@@ -121,6 +121,16 @@ textarea:not([rows]) {
     width: 80px;
 }
 
+.arrow{
+    position: absolute;
+    top: 55px;
+    left: 8px;
+    width: 60px;
+    padding: .5rem;
+    background-color: var(--bg-second);
+    border-radius: 100%;
+}
+
 span{
   font-weight: 700;
 }
