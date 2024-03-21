@@ -29,6 +29,11 @@ const router = createBrowserRouter([
           element: <Menu />,
           loader: MenuLoader,
         },
+        {
+          path: '/quizz/:ageName',
+          element: <Quizz />,
+          loader: MenuLoader,
+        },
 
     ]
   }
