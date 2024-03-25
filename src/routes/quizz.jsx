@@ -1,7 +1,8 @@
 import { fetchQuizzData} from '../lib/loaders';
-import ButtonMenu from '../ui/ButtonMenu'
-import { useLoaderData, defer, Await } from 'react-router-dom';
+import { useLoaderData } from 'react-router-dom';
 import {Link} from 'react-router-dom';
+import Answer from '../ui/Answer';
+import React, { useState } from 'react';
 
 
 
@@ -16,56 +17,50 @@ export async function loader({params}) {
 
 export default function Quizz() {
 
+    const [isIndex, setIsIndex] = useState(0);
+
     const data = useLoaderData();
+
+    
+    function handler(ev){
+
+      let valid = document.querySelector('[data-valid=true]');
+      valid.classList.add('valid');
+      
+      if(ev.target.dataset.valid == 'false'){
+        ev.target.classList.add('unvalid');
+      }
+      
+      let suiv = document.querySelector('#next');
+      suiv.style.display = 'block';
+    }
+
+    function handlerQues(ev){
+      let suiv = document.querySelector('#next');
+      setIsIndex(isIndex+1)
+    }
+
+    
+    let ques = data[isIndex].questions.map((question) => {
+      console.log(question)
+      return <Answer  title={question.answer} valid={question.valid} className={'quizz__list-item'} handler={handler}/>
+    })
+
 
   return (
     <>
     <Link to="../" >
       <img src='../arrow.svg' className='arrow'></img>
     </Link>
-    {/* <div className='menu__title'>
-      
-    
-      <div className="menu__title-box ">
-        <img src={data.image} alt="" className="menu__title-img"></img>
-      </div>
-      <h3 className="menu__title-subtitle">Salut mon <span>{data.title}</span> !</h3>
-    </div>
-    <div className='menu__list-box'>
-      <ul className='menu__list'>
-        <li key="1" className="menu__list-item">
-          <Link to="/timer" className="menu__list-link">
-        
-                <ButtonMenu
-                image="../timer.svg"
-                title="Mon chronomètre"
-              />
-
-          </Link>
-        </li>
-        <li key="2" className="menu__list-item">
-          <Link to="/soins "className="menu__list-link">
-        
-                <ButtonMenu
-                image="../soins.svg"
-                title="Prendre soins de mes dents"
-              />
-
-          </Link>
-        </li>
-        <li key="3" className="menu__list-item">
-          <Link to="/quizz" className="menu__list-link">
-        
-                <ButtonMenu
-                image="../quizz.svg"
-                title="Le quizz des dents"
-              />
-
-          </Link>
-        </li>
+    <section className='quizz'>
+      <h3 className='quizz__title'>{data[0].title}</h3>
+      <ul className='quizz__list'>
+        {ques}
       </ul>
-      </div>
-     */}
+      <button className='quizz__next' id="next">
+        Question Suivante
+      </button>
+    </section>
      </>
   );
 }

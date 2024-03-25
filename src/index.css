@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import './css/accueil.css';
 @import './css/menu.css';
+@import './css/quizz.css';
 
 
 
@@ -19,12 +20,16 @@
     --text-base : var(--white);
     --text-secondary : var(--black);
 
+    --valid: var(--green);
+    --unvalid: var(--red);
+
     --card-bg: var(--light-blue);
     --card-secondary-bg: var(--light-blue-transparent);
 
     --button-bg: var(--white);
 
     --fs-title: 2rem;
+    --fs-ques: 1.3rem;
     --fs-subtitle: 1rem;
     
     --ff-title: 'Fredoka', sans-serif;

@@ -1,0 +1,75 @@
+.quizz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    
+}
+
+.quizz__title{
+  text-align: center;
+  padding: 2rem;
+  max-width: 25rem;
+  margin: 3rem;
+  background-color: var(--button-bg);
+  border-radius: 25px;
+  border: 5px solid var(--card-secondary-bg);
+  color: var(--text-secondary);
+  font-family: var(--ff-title);
+  font-size: var(--fs-ques);
+}
+
+
+.quizz__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 0;
+    gap: 3rem;
+    cursor:pointer;
+    list-style: none;
+    
+    
+}
+
+.quizz__list-item {
+    padding: 2rem;
+    background-color: var(--card-bg);
+    border-radius: 200px;
+    font-family: var(--ff-p);
+    font-size: var(--fs-subtitle);
+    width: 100%;
+    max-width: 30rem;
+    text-align: center;
+    list-style: none;
+
+}
+
+.quizz__list-title{
+    margin: 0;
+    pointer-events: none;
+}
+
+.valid{
+    background-color: var(--valid);
+}
+
+.unvalid{
+    background-color: var(--unvalid);
+}
+
+.quizz__next {
+    padding: 2rem;
+    background-color: var(--card-bg);
+    border: dashed 2px var(--button-bg);
+    border-radius: 200px;
+    font-family: var(--ff-title);
+    font-size: var(--fs-subtitle);
+    width: 100%;
+    max-width: 20rem;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+
+}

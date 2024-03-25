@@ -17,6 +17,7 @@ export async function loader({params}) {
 export default function Menu() {
 
     const data = useLoaderData();
+    console.log(data)
 
   return (
     <>
@@ -54,7 +55,7 @@ export default function Menu() {
           </Link>
         </li>
         <li key="3" className="menu__list-item">
-          <Link to="/quizz" className="menu__list-link">
+          <Link to={data.linkQuizz} className="menu__list-link">
         
                 <ButtonMenu
                 image="../quizz.svg"
