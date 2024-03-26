@@ -95,9 +95,11 @@ export default function Quizz() {
         <section className='quizz'>
           <div className="quizz__title-box ">
             <img src={"../requin-" + data.age + ".svg"} alt="" className="quizz__title-img"></img>
-          </div>
+          </div> 
+          <h3 className='quizz__title'>Bravo tu as répondu à toutes les questions !</h3>
           <button className='quizz__restart' id="next" onClick={handlerRestart}>
             Recommencer !
+           
           </button>
         </section>
       </>

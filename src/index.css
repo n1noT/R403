@@ -7,9 +7,9 @@
 
 :root{
     --blue: hsl(206, 90%, 39%);
-    --light-blue: hsl(210, 76%, 69%);
+    --light-blue: hsl(210, 62%, 65%);
     --light-blue-transparent: hsl(210, 76%, 69%, 50%);
-    --green: hsl(130, 92%, 79%);
+    --green: hsl(129, 60%, 69%);
     --red: hsl(0, 82%, 79%);
     --white: hsl(0, 0%, 100%);
     --transparent-white: hsl(0, 0%, 100%, 50%);
@@ -87,6 +87,10 @@ h3, h4 {
   text-wrap: balance;
 }
 
+p{
+  margin: 0;
+  width: fit-content;
+}
 /* A elements that don't have a class get default styles */
 a:not([class]) {
   text-decoration-skip-ink: auto;

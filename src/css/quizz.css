@@ -54,7 +54,7 @@
 }
 
 .quizz__list-item {
-    padding: 2rem;
+    padding: 1.7rem;
     background-color: var(--card-bg);
     border-radius: 200px;
     font-family: var(--ff-p);
@@ -69,6 +69,8 @@
 
 
 .quizz__list-title{
+    font-size: var(--fs-subtitle);
+    /* color: var(--text-secondary); */
     margin: 0;
     pointer-events: none;
 }
@@ -82,6 +84,10 @@
 }
 
 .quizz__next {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
     padding: 2rem;
     background-color: var(--card-bg);
     border: dashed 2px var(--button-bg);
@@ -93,20 +99,24 @@
     text-align: center;
     display: none;
     cursor: pointer;
+    font-weight: 700;
+    color: var(--text-base);
+    font-size: var(--fs-ques);
 
 }
 
 .quizz__restart {
     padding: 2rem;
-    margin-top: 8rem;
+    margin-top: 3rem;
     background-color: var(--card-bg);
     border: dashed 2px var(--button-bg);
     border-radius: 200px;
     font-family: var(--ff-title);
-    font-size: var(--fs-subtitle);
+    font-size: var(--fs-ques);
     width: 100%;
     max-width: 20rem;
     text-align: center;
     cursor: pointer;
-
+    font-weight: 700;
+    color: var(--text-base);
 }
