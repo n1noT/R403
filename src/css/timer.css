@@ -1,0 +1,102 @@
+/* Styles pour le header */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2cap;
+    
+}
+
+.header__arrow {
+    position: absolute;
+    left: 1.5rem;
+    top: 1.5rem;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.header__title {
+    font-family: 'Fredoka';
+    font-weight: 600;
+    font-size: 1.6rem;
+    margin: 0;
+}
+
+/* Styles pour le timer */
+.timer {
+    position: relative; /* Permet de positionner les pseudo-éléments par rapport à ce conteneur */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 4.5rem;
+    margin-top: 3rem;
+}
+
+.timer__display {
+    position: relative; /* Permet de positionner les pseudo-éléments par rapport à ce conteneur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Fredoka';
+    background-color: var(--light-blue);
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    color: #ffffff;
+    overflow: hidden; /* Pour masquer la partie de la bordure qui dépasse */
+}
+
+#circle {
+    top: -0.65rem;
+    right: 5.6rem;
+    position: absolute;
+    width: 16rem;
+    transform: rotate(-90deg);
+}
+
+#timer-circle {
+    stroke-width: 5px;
+  stroke-dasharray: 1338;
+  stroke-dashoffset: 0;
+  fill: transparent;
+  animation: dash 120s linear infinite;
+  animation-play-state: paused;
+  
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: -1338; /* taille initiale du trait */
+    }
+}
+
+
+
+.timer__controls {
+    display: flex;
+    gap: 4rem;
+}
+
+.timer__button {
+    background-color: var(--blue);
+    border: none;
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.timer__icon {
+    width: 4rem;
+    height: 4rem;
+    fill: white;
+}
+
+.timer__image {
+    width: 14rem;
+    height: auto;
+}
