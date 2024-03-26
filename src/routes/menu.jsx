@@ -8,7 +8,7 @@ import {Link} from 'react-router-dom';
 
 export async function loader({params}) {
     let ageData =  await fetchOneAgeData(params.ageName);
-    return ageData;
+    return {ageData : ageData, age : params.ageName};
 
     
 }
@@ -17,20 +17,20 @@ export async function loader({params}) {
 export default function Menu() {
 
     const data = useLoaderData();
-    console.log(data)
+ 
 
   return (
     <>
-    <Link to="../" >
+    <Link to="/" >
       <img src='../arrow.svg' className='arrow'></img>
     </Link>
     <div className='menu__title'>
       
     
       <div className="menu__title-box ">
-        <img src={data.image} alt="" className="menu__title-img"></img>
+        <img src={"../requin-" + data.age + ".svg"} alt="" className="menu__title-img"></img>
       </div>
-      <h3 className="menu__title-subtitle">Salut mon <span>{data.title}</span> !</h3>
+      <h3 className="menu__title-subtitle">Salut mon <span>{data.ageData.title}</span> !</h3>
     </div>
     <div className='menu__list-box'>
       <ul className='menu__list'>
@@ -45,7 +45,7 @@ export default function Menu() {
           </Link>
         </li>
         <li key="2" className="menu__list-item">
-          <Link to="/soins "className="menu__list-link">
+          <Link to="/soins" className="menu__list-link">
         
                 <ButtonMenu
                 image="../soins.svg"
@@ -55,7 +55,7 @@ export default function Menu() {
           </Link>
         </li>
         <li key="3" className="menu__list-item">
-          <Link to={data.linkQuizz} className="menu__list-link">
+          <Link to={"/quizz/"+ data.age} className="menu__list-link">
         
                 <ButtonMenu
                 image="../quizz.svg"

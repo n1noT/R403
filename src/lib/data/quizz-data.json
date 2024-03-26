@@ -8,12 +8,12 @@
           "valid": false
         },
         {
-          "answer": "Tous les jours",
-          "valid": true
-        },
-        {
           "answer": "Jamais",
           "valid": false
+        },
+        {
+          "answer": "Tous les jours",
+          "valid": true
         }
       ]
     },
@@ -21,12 +21,12 @@
       "title": "Combien de temps devrais-tu te brosser les dents ?",
       "questions": [
         {
-          "answer": "10 secondes",
-          "valid": false
-        },
-        {
           "answer": "2 minutes",
           "valid": true
+        },
+        {
+          "answer": "10 secondes",
+          "valid": false
         },
         {
           "answer": "30 minutes",
@@ -106,12 +106,12 @@
       "title": "Doit-on se brosser les dents avant ou après le petit-déjeuner ?",
       "questions": [
         {
-          "answer": "Avant",
-          "valid": false
-        },
-        {
           "answer": "Après",
           "valid": true
+        },
+        {
+          "answer": "Avant",
+          "valid": false
         },
         {
           "answer": "Pendant",
@@ -181,12 +181,12 @@
           "valid": false
         },
         {
-          "answer": "2 minutes",
-          "valid": true
-        },
-        {
           "answer": "10 minutes",
           "valid": false
+        },
+        {
+          "answer": "2 minutes",
+          "valid": true
         }
       ]
     },
@@ -211,13 +211,13 @@
       "title": "Pourquoi est-il important d'utiliser du dentifrice en brossant tes dents ?",
       "questions": [
         {
-          "answer": "Pour rendre les dents plus colorées",
-          "valid": false
-        },
-        {
           "answer": "Pour protéger contre les caries",
           "valid": true
         },
+        {
+          "answer": "Pour rendre les dents plus colorées",
+          "valid": false
+        },  
         {
           "answer": "Pour rendre les dents plus lisses",
           "valid": false
@@ -232,12 +232,12 @@
           "valid": false
         },
         {
-          "answer": "Cracher le dentifrice et ne pas rincer",
-          "valid": true
-        },
-        {
           "answer": "Manger un bonbon",
           "valid": false
+        },
+        {
+          "answer": "Cracher le dentifrice et ne pas rincer",
+          "valid": true
         }
       ]
     },
@@ -262,12 +262,12 @@
       "title": "Est-il important de se brosser la langue en même temps que les dents ?",
       "questions": [
         {
-          "answer": "Non, cela ne sert à rien",
-          "valid": false
-        },
-        {
           "answer": "Oui, pour éliminer les bactéries",
           "valid": true
+        },
+        {
+          "answer": "Non, cela ne sert à rien",
+          "valid": false
         },
         {
           "answer": "Seulement si tu veux rendre ta langue plus rugueuse",
@@ -283,12 +283,12 @@
           "valid": false
         },
         {
-          "answer": "Une brosse à dents avec des poils souples",
-          "valid": true
-        },
-        {
           "answer": "N'importe quelle brosse à dents fonctionnera",
           "valid": false
+        },
+        {
+          "answer": "Une brosse à dents avec des poils souples",
+          "valid": true
         }
       ]
     },
@@ -333,12 +333,12 @@
       "title": "Pourquoi est-il important de se brosser les dents deux fois par jour ?",
       "questions": [
         {
-          "answer": "Pour que tes dents deviennent jaunes",
-          "valid": false
-        },
-        {
           "answer": "Pour éliminer les restes alimentaires et prévenir les caries",
           "valid": true
+        },
+        {
+          "answer": "Pour que tes dents deviennent jaunes",
+          "valid": false
         },
         {
           "answer": "Pour rendre tes dents brillantes",
@@ -369,14 +369,14 @@
         {
           "answer": "De haut en bas uniquement",
           "valid": false
+        },        
+        {
+          "answer": "De gauche à droite uniquement",
+          "valid": false
         },
         {
           "answer": "Des mouvements circulaires",
           "valid": true
-        },
-        {
-          "answer": "De gauche à droite uniquement",
-          "valid": false
         }
       ]
     },
@@ -384,13 +384,13 @@
       "title": "Est-il important de se brosser la langue ?",
       "questions": [
         {
-          "answer": "Non, ce n'est pas nécessaire",
-          "valid": false
-        },
-        {
           "answer": "Oui, pour éliminer les bactéries responsables de la mauvaise haleine",
           "valid": true
         },
+        {
+          "answer": "Non, ce n'est pas nécessaire",
+          "valid": false
+        },        
         {
           "answer": "Seulement si tu veux que ta langue soit propre",
           "valid": false
@@ -420,14 +420,14 @@
         {
           "answer": "Rien, tu peux te brosser plus tard",
           "valid": false
+        },        
+        {
+          "answer": "Tu ne peux rien faire d'autre que d'attendre",
+          "valid": false
         },
         {
           "answer": "Tu peux mâcher un chewing-gum sans sucre",
           "valid": true
-        },
-        {
-          "answer": "Tu ne peux rien faire d'autre que d'attendre",
-          "valid": false
         }
       ]
     },
@@ -452,13 +452,13 @@
       "title": "Comment peux-tu rendre le brossage des dents plus amusant ?",
       "questions": [
         {
-          "answer": "En le faisant très rapidement",
-          "valid": false
-        },
-        {
           "answer": "En écoutant de la musique ou en utilisant une brosse à dents musicale",
           "valid": true
         },
+        {
+          "answer": "En le faisant très rapidement",
+          "valid": false
+        },        
         {
           "answer": "En fermant les yeux et en comptant jusqu'à 100",
           "valid": false
@@ -471,14 +471,14 @@
         {
           "answer": "Continuer à se brosser vigoureusement pour arrêter le saignement",
           "valid": false
+        },       
+        {
+          "answer": "Arrêter de te brosser les dents pendant quelques jours",
+          "valid": false
         },
         {
           "answer": "Consulter un dentiste, car cela pourrait être le signe de problèmes de gencives",
           "valid": true
-        },
-        {
-          "answer": "Arrêter de te brosser les dents pendant quelques jours",
-          "valid": false
         }
       ]
     },
@@ -486,13 +486,13 @@
       "title": "Pourquoi est-il important de ne pas avaler le dentifrice ?",
       "questions": [
         {
-          "answer": "Parce qu'il a mauvais goût",
-          "valid": false
-        },
-        {
           "answer": "Parce qu'il contient du fluorure, ce qui peut être nocif en grande quantité",
           "valid": true
         },
+        {
+          "answer": "Parce qu'il a mauvais goût",
+          "valid": false
+        },        
         {
           "answer": "Parce que cela rendra tes dents trop blanches",
           "valid": false

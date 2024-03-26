@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 
 export default function AgeCards(age) {
-  console.log(age)
   let ageCards = age.ages.map((age) => {
     // console.log(index);
     return (
@@ -20,7 +19,7 @@ export default function AgeCards(age) {
     );
   });
   return (
-    <ul class="accueil__list">
+    <ul className="accueil__list">
       {ageCards}
     </ul>
   );

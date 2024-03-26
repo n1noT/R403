@@ -1,18 +1,16 @@
 {
     "36": {
-      "image": "../requin-3.svg",
-      "title": "requinou",
-      "linkQuizz": "/quizz/36"
+      "image": "../requin-36.svg",
+      "title": "requinou"
     }, 
     "69": {
-      "image": "../requin-6.svg",
-      "title": "grand requin",
-      "linkQuizz": "/quizz/69"
+      "image": "../requin-69.svg",
+      "title": "grand requin"
+      
     }, 
     "912": {
-      "image": "../requin-9.svg",
-      "title": "très grand requin",
-      "linkQuizz": "/quizz/912"
+      "image": "../requin-912.svg",
+      "title": "très grand requin"
     } 
  
   

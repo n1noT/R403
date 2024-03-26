@@ -18,12 +18,12 @@ export async function fetchQuizzData(ageName){
     let data = await answer.json();
     data = data[ageName];
     // choose 3 random testimonies
-    let ques = [];
+    let questions = [];
     for(let i=0; i<3; i++){
         let index = Math.floor(Math.random() * data.length); // random index
-        ques.push(data[index]); // add to testimonies
+        questions.push(data[index]); // add to testimonies
         data.splice(index, 1); // remove from data to avoid duplicates
     }
-    return ques;
+    return questions;
 }
 

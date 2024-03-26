@@ -5,7 +5,7 @@ export default function Root() {
 
   return (
     <>
-      <section>
+      <section className='main'>
         <Title/>
         <Outlet/>
         
