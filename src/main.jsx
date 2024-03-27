@@ -7,7 +7,7 @@ import Root from './routes/root.jsx';
 import Accueil, {loader as AgeLoader} from './routes/age.jsx';
 import Menu, {loader as MenuLoader} from './routes/menu.jsx';
 import Quizz, {loader as QuizzLoader} from './routes/quizz.jsx';
-import Timer from './routes/timer.jsx';
+import Timer, {loader as TimerLoader} from './routes/timer.jsx';
 import ErrorPage from './ui/ErrorPage'
 
 
@@ -37,8 +37,9 @@ const router = createBrowserRouter([
           loader: QuizzLoader,
         },
         {
-          path: '/timer',
+          path: '/timer/:ageName',
           element: <Timer />,
+          loader: TimerLoader,
         },
 
     ]

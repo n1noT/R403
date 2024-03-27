@@ -35,7 +35,7 @@ export default function Menu() {
     <div className='menu__list-box'>
       <ul className='menu__list'>
         <li key="1" className="menu__list-item">
-          <Link to="/timer" className="menu__list-link">
+          <Link to={"/timer/"+ data.age} className="menu__list-link">
         
                 <ButtonMenu
                 image="../timer.svg"

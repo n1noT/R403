@@ -37,6 +37,7 @@
 }
 
 .timer__display {
+    
     position: relative; /* Permet de positionner les pseudo-éléments par rapport à ce conteneur */
     display: flex;
     justify-content: center;
@@ -57,10 +58,14 @@
 
 #circle {
     top: -0.72rem;
-    right: -0.7rem;
+    right: -0.22rem;
     position: absolute;
     width: 16rem;
     transform: rotate(-90deg);
+}
+
+.compteur {
+    margin: 0;
 }
 
 #timer-circle {
@@ -95,6 +100,7 @@
 }
 
 .timer__icon {
+    cursor: pointer;
     width: 4rem;
     height: 4rem;
     fill: white;
