@@ -45,7 +45,7 @@ export default function Menu() {
           </Link>
         </li>
         <li key="2" className="menu__list-item">
-          <Link to="/soins" className="menu__list-link">
+          <Link to={"/infos/"+ data.age} className="menu__list-link">
         
                 <ButtonMenu
                 image="../soins.svg"

@@ -1,0 +1,32 @@
+.infos__list-box{
+    margin: 1rem;
+    background-color: var(--button-bg);
+    border-radius: 15px;
+    padding: .5rem;
+}
+
+.infos__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    margin: 0;
+    gap: 1.5rem;
+    list-style: none;
+    
+}
+
+.infos__list-item {
+    border: 3px solid var(--card-secondary-bg);
+    border-style: dashed;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 25rem;
+    background-color: var(--button-bg);
+    border-radius: 20px;
+    list-style: none;
+    box-shadow: 0px 10px 25px -5px rgba(0,0,0,0.3);
+
+}
+
+
