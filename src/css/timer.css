@@ -51,9 +51,13 @@
     overflow: hidden; /* Pour masquer la partie de la bordure qui dépasse */
 }
 
+.chrono {
+    position: relative;
+}
+
 #circle {
-    top: -0.65rem;
-    right: 5.6rem;
+    top: -0.72rem;
+    right: -0.7rem;
     position: absolute;
     width: 16rem;
     transform: rotate(-90deg);
