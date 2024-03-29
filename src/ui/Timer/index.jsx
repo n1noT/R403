@@ -76,18 +76,22 @@ export default function TimerCircle(props) {
                 }
                 if (secs === 0) {
                     
-                    setMinutes(mins - 1);
-                    setSeconds(59);
-                    if (mins === 0){
-                        clearInterval()
-                    }
+                    if (mins > 0) {
+                        setMinutes(mins - 1);
+                        setSeconds(59);
+                    } 
 
                 }
                 circle.style.animationPlayState = "running";
+
+                if (secs == 0 && mins == 0){
+                    circle.style.animationPlayState = "paused";
+                }
             }, 1000);
         }
         return () => {
-            
+
+        
             clearInterval(sampleInterval);
         };
     }, [mins, secs, isRunning]);
@@ -122,8 +126,8 @@ export default function TimerCircle(props) {
                     </svg>
                 </div>
                 <div className="timer__display" >
-                    {!(mins && secs) && hasStarted ? (
-                        ""
+                    {! hasStarted ? (
+                        "02:00"
                     ) : (
                         <p className="compteur" >
                             {mins >= 0 ? `${mins < 10 ? `0${mins}` : mins}:` : '00:'}
